@@ -83,13 +83,6 @@
     font:inherit;
   }
   
-  /* Remove default margin */
-  /* *{
-    margin:0;
-    padding:0;
-    font:inherit;
-  } */
-  
   /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
   ul[role='list'],
   ol[role='list'] {
@@ -188,12 +181,6 @@ body{
   }
   
 
-  /* .button[data-type="inverted"]:hover,
-  .button[data-type="inverted"]:focus-visible{
-    background-color:var(--clr-neutral-100);
-    color:var(--clr-accent-300);
-    } */
-  
 
   /* Utility classes */
 
@@ -211,11 +198,6 @@ body{
   border: 0 !important;
   }
   
-
-
-
-
-
     
   .container{
 
@@ -237,13 +219,6 @@ body{
     display: flex;
     flex-direction: column;
   }
-   
-  /* @media(min-width:50em){
-    .even-columns{
-      grid-auto-flow:column;
-      grid-auto-columns:1fr;
-    }
-  } */
   
   .vertical-align-center {
     align-items: center;
@@ -437,11 +412,11 @@ body{
 
 .nav-list a{
   text-decoration: none;
-  color:var(--clr-primary-400);
+  color:var(--clr-neutral-900);
   font-weight: var(--fw-semi-bold);
 }
 .nav-list a:where(:hover, :focus){
-  color:var(--clr-primary-300);
+  color:var(--clr-primary-400);
 }
 
 .primary-navigation a{
@@ -554,17 +529,14 @@ header {
        
         /* top:-300px; */
         top:0px;
-        height:100%;
+        height:1000px;
         --computed-left-1: calc(var(--max-width) / 2);
         --computed-left-2: calc((100% - var(--container-padding) * 2) / 2);
         left: clamp(calc(50vw - 70px), min(calc(var(--computed-left-1) - 20px), calc(var(--computed-left-2) - 20px)),1200px);
-        /* left:calc(var(--max-width) / 2); */
-        /* left:500px; */
         background-image: url("images/bg-intro-desktop.svg");
         background-repeat: no-repeat;
         background-size: 1400px 1050px;
         background-position: 0px -275px;
-    
     }
     
 }
@@ -611,9 +583,7 @@ header {
     .hero-section .hero-wrapper .hero-img img {
         position: absolute;
         left:clamp(min(calc(50vw + 50px),470px), calc( min(var(--max-width),(100% - var(--container-padding)*2)) - 435px), 940px);
-        /* left:clamp(min(calc(50vw + 10px),410px), calc( min(var(--max-width),(100% - var(--container-padding)*2)) - 435px), 940px); */
         top:-125px;
-        /*top:clamp(-255px,-32dvw,-50px);/*to calculate the top to keep the same position of the image*/
         height: 970px;
     }
 }
@@ -660,9 +630,6 @@ header {
         text-align: left;
       }
   }
-  /* .why-easybank .part-one h2 {
-    max-width: 15ch;
-  } */
 
     @media (min-width:50em) {
     .why-easybank .part-one h2 {
@@ -718,7 +685,7 @@ header {
 }
 
 .latest-articles .card-body {
-    padding:1rem;
+    padding:1rem 2rem 1rem 2rem;
 }
 
 .latest-articles .card-body a {
@@ -784,7 +751,7 @@ header {
 
 @media (min-width:50em) {
   .social-icon {
-    width: var(--size-600);
+    width: var(--size-500);
     fill:var(--clr-neutral-100);
     aspect-ratio:1;
   }
@@ -825,6 +792,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+gap:var(--size-600);
 }
 
 @media (min-width:50em) {
