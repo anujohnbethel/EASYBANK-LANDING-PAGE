@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="primary-header | bg-neutral-100">
+    <header class="primary-header | bg-neutral-100 padding-block-500">
       <div class="container">
         <div class="nav-wrapper">
           <a href="">
@@ -53,14 +53,14 @@
       </div>
     </header>
     <main>      
-        <section class="primary-intro">
+        <section class="hero-section">
           <div class="container">
-            <div class="even-columns">            
-              <div class="primary-intro-text | block-flow">
+            <div class="hero-wrapper">            
+              <div class="hero-text | flow padding-block" style="--top-spacer:1rem; --bottom-spacer:5rem;">
                 <h1 class="fs-primary-heading">
                   Next generation digital banking
                 </h1>
-                <p class="fs-400 text-neutral-900">
+                <p class="text-neutral-900">
                   Take your financial life online.
                   Your Easybank account will be 
                   a one-stop-shop for sending, saving,
@@ -69,16 +69,16 @@
                 <button class="button">Request Invite</button>
               </div>
   
-              <div class="primary-intro-img">
+              <div class="hero-img">
                 <img src="src/images/image-mockups.png" alt="">
               </div>
             </div>
           </div>
         </section>
-      <section class="Why-Easybank-wrapper | bg-neutral-300 padding-block-600">
+      <section class="why-easybank | bg-neutral-300 padding-block">
         <div class="container">
-          <div class="grid-rows">
-            <div class ="Why-Easybank | block-flow padding-block" style="--bsize:2rem;">
+          <div class="why-easybank-wrapper">
+            <div class ="part-one | flow padding-block" style="--flow-spacer:2rem;--top-spacer:0px;--bottom-spacer:4rem;" >
               <h2 class="fs-secondary-heading">
                 Why choose Easybank?
               </h2>
@@ -88,8 +88,8 @@
                 like never before.
               </p>
             </div>
-            <div class="grid-columns">
-              <div class="block-flow">
+            <div class="part-two | even-columns">
+              <div class="flow">
                 <img src="src/images/icon-online.svg" alt="">
                 <h3 class="fs-subheading">
                   Online Banking
@@ -100,7 +100,7 @@
                   you are in the world.
                 </p>
               </div>
-              <div class="block-flow">
+              <div class="flow">
                 <img src="src/images/icon-budgeting.svg" alt="">
                 <h3 class="fs-subheading">
                   Simple Budgeting
@@ -111,7 +111,7 @@
                   hitting your limits.
                 </p>
               </div>
-              <div class="block-flow">
+              <div  class="flow">
                 <img src="src/images/icon-onboarding.svg" alt="">
                 <h3 class="fs-subheading">
                   Fast Onboarding
@@ -122,7 +122,7 @@
                   your finances right away.
                 </p>
               </div>
-              <div class="block-flow">
+              <div  class="flow">
                 <img src="src/images/icon-api.svg" alt="">
                 <h3 class="fs-subheading">
                   Open API
@@ -133,17 +133,18 @@
                   has never been easier.
                 </p>
               </div>
+
             </div>
           </div>
         </div>
       </section>
-      <section class="latest-articles | padding-block-600">
-        <div class="container  | block-flow">
-          <h2 class="fs-secondary-heading | text-align-center-sm-only text-align-left-md-lg-only">Latest Articles</h2>
-          <div class="grid-columns">
-            <div class="bg-neutral-100  | block-flow" style="--flow-spacer:.5em;">
+      <section class="latest-articles | padding-block">
+        <div class="container">
+          <h2 class="fs-secondary-heading | text-align-center-sm-only text-align-left-md-lg-only padding-block" style="--top-spacer:0px;--bottom-spacer:3rem;">Latest Articles</h2>
+          <div class="card-wrapper | even-columns">
+            <div class="bg-neutral-100  | flow" style="--flow-spacer: .7em;">
               <img src="src/images/image-currency.jpg"  alt="">
-              <div class="latest-article-card-body">
+              <div class="card-body">
                 <p class="fs-100 text-neutral-900">By Claire Robinson</p>
                 <h4 class="fs-sub-subheading">
                   <a href="#">
@@ -157,9 +158,9 @@
                 </p>
               </div>
             </div>
-            <div  class="bg-neutral-100 | block-flow" style="--flow-spacer:.5em;">
+            <div  class="bg-neutral-100 | flow" style="--flow-spacer: .7em;">
               <img src="src/images/image-restaurant.jpg" alt="">
-              <div class="latest-article-card-body">
+              <div class="card-body">
                 <p  class="fs-100 text-neutral-900">By Wilson Hutton</p>
                 <h4 class="fs-sub-subheading">
                   <a href="#">
@@ -174,9 +175,9 @@
                 </p>
               </div>
             </div>
-            <div  class="bg-neutral-100 | block-flow" style="--flow-spacer:.5em;">
+            <div  class="bg-neutral-100 | flow" style="--flow-spacer: .7em;">
               <img src="src/images/image-plane.jpg" alt="">
-              <div class="latest-article-card-body">
+              <div class="card-body">
                 <p  class="fs-100 text-neutral-900">By Wilson Hutton</p>
                 <h4 class="fs-sub-subheading">
                   <a href="#">
@@ -190,9 +191,9 @@
                 </p>
               </div>
             </div>
-            <div  class="bg-neutral-100 | block-flow" style="--flow-spacer:.5em;">
+            <div  class="bg-neutral-100 | flow" style="--flow-spacer: .7em;">
               <img src="src/images/image-confetti.jpg" alt="">
-              <div class="latest-article-card-body">
+              <div class="card-body">
                 <p  class="fs-100 text-neutral-900">By Claire Robinson</p>
                 <h4 class="fs-sub-subheading">
                   <a href="#">
@@ -211,9 +212,9 @@
           </div>
       </section>
     </main>
-    <footer class="primary-footer | padding-block-200 bg-primary-400 text-neutral-100">
+    <footer class="primary-footer | padding-block bg-primary-400 text-neutral-100">
       <div class="container">
-        <div class="primary-footer-wrapper grid-columns ">
+        <div class="primary-footer-wrapper">
           <div class="footer-logo-social">
             <a href="#">
               <svg class="footer-logo" style="--logo-color:var(--clr-neutral-100)" xmlns="http://www.w3.org/2000/svg" width="139" height="20">
@@ -234,7 +235,7 @@
                 </g>
             </svg>
             </a>
-            <ul class="social-list | padding-block" style="--tsize:1rem;" role="list" aria-label="social links">
+            <ul class="social-list" role="list" aria-label="social links">
               <li><a href="#" aria-label="facebook">
                 <svg class="social-icon">
                   <use xlink:href="src/images/social-icons.svg#icon-facebook"></use>
@@ -269,7 +270,7 @@
           </div>
           <div>
             <nav class="footer-nav">
-              <ul aria-label="footer" role="list" class="block-flow" style="--flow-spacer:var(--size-100);">
+              <ul aria-label="footer" role="list" class="flow" style="--flow-spacer:var(--size-400);">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Blog</a></li>
@@ -280,7 +281,7 @@
             </nav>
           </div>
           <div class="footer-copy-right">
-            <button class="button">Request Invite</button>
+            <button class="button" data-type="inverted" >Request Invite</button>
             <p class="" style="--tsize:2rem;">&copy; Easybank. All Rights Reserved</p>
           </div>
         </div>
